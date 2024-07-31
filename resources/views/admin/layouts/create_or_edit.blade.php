@@ -24,6 +24,12 @@
                     <input type="text" name="title" id="title" class="form-control" value="{{ old('title', $project->title) }}">
                 </div>
 
+                <select class="form-select" aria-label="Default select example" name="type_id">
+                    @foreach ($types as $type)
+                        <option value="{{ $type->id }}"> {{ $type->name }} </option>
+                    @endforeach
+                </select>
+
                 <div class="mb-3">
                     @error("image")
                         <div class="alert alert-danger">

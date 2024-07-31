@@ -33,7 +33,7 @@
                             <td>
                                 {{ $project->id }}
                             </td>
-                            <td>
+                            <td style="color: {{ $project->type->color }}">
                                 {{ $project->type->name }}
                             </td>
                             <td>
