@@ -7,6 +7,9 @@
             <h1>
                 {{ $project->id }} - <strong>{{ $project->title }}</strong>
             </h1>
+            <h3 class="d-inline-block" style="color: {{ $project->type->color }}">
+                <strong>{{ $project->type->name }}</strong>
+            </h3>
             <h3>
                 <em>{{ $project->author }}</em>
             </h3>
